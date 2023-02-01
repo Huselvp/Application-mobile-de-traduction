@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    style="@style/AppTheme.MaterialTheme"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="294dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        app:srcCompat="@drawable/sayhi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <Spinner
+            android:id="@+id/idFromSpinner"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_right_arrow_"
+            app:tint="@color/gree"
+            android:layout_gravity="center"
+            />
+        <Spinner
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/idToSpinner"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Votre Texte"
+        android:padding="5dp"
+        android:textColorHint="@color/black"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdtSource"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:importantForAutofill="yes"
+            android:inputType="textImeMultiLine|textMultiLine"
+            android:textColor="@color/gree"
+            android:textColorHint="@color/gree"
+            android:textSize="14sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/voice"
+        app:tint="@color/blue"
+        android:id="@+id/idIVMic" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tnTranslate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp"
+        android:text="Ecouter"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnTranslate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="0dp"
+        android:text="Traduire"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/idTVTranslatedTV"
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textImeMultiLine|textMultiLine"
+        android:text="Text traduit "
+
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="10dp"
+
+
+        />
+
+
+
+
+</LinearLayout>
